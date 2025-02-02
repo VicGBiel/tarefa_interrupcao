@@ -55,7 +55,8 @@ target_include_directories(tarefa_interrupcao PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(tarefa_interrupcao 
-        
+        hardware_dma
+        hardware_pio        
         )
 
 pico_add_extra_outputs(tarefa_interrupcao)
